@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <title>Add Ingrediends</title>
+</head>
+
+<body>
+    <div class="container py-5">
+        <form class="col-6" method="post" action="{{ urlpath "addIngredients"}}">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Denumire</label>
+                <input name="nume" type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Calorii</label>
+                <input name="calorii" type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Proteine</label>
+                <input name="proteine" type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Grame</label>
+                <input name="grame" type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
